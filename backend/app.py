@@ -2,6 +2,8 @@ import io
 import os
 import threading
 
+os.environ["TF_USE_LEGACY_KERAS"] = "1"
+
 import numpy as np
 from flask import Flask, jsonify, request, send_file
 from flask_cors import CORS
